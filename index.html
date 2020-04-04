@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <style>
+        *{margin:0; padding:0;}
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        h1{
+            margin: 20px 0;
+        }
+        #wrapper{
+        width:80%;
+        margin:0 auto;}
+        
+        #gallery{
+        width:100%;}
+        
+        .tile{
+        margin-top: 40px;
+        background-color: #6BA1D9;
+        border-radius:18px;
+        overflow: hidden;
+        box-shadow: 0px 5px 15px 0px #555;
+        transition: 0.2s all ease-out;}
+        .tile:active{
+        transform: scale(1.05);            
+        box-shadow: 0px 5px 25px 0px #555;
+        }
+        
+        .img-holder>img{
+        width:100%;}
+        
+        .span-holder{
+        width:100%;
+        padding: 3% 0;
+        background-color: #F9F6FE;        
+        text-align: center;}
+        .span-holder>span{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        @media (min-width: 768px){
+            #gallery{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .tile{
+                width: 30%;
+            }
+        }
+        @media (min-width: 1200px){
+            #wrapper{
+                width: 1100px;
+            }
+            .tile{
+                flex-basis: 200px;
+            }
+            .tile:hover{
+            transform: scale(1.05);            
+            box-shadow: 0px 5px 25px 0px #555;
+            }
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Gallery Heading</h1>
+        <div id="gallery">
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        
+        <div class="tile">
+            <div class="img-holder"><img src="placeholder-image.png" alt=""></div>
+            <div class="span-holder"><span>Image Title</span></div>
+        </div><!--.tile END-->
+        </div><!--#gallery END-->
+    </div><!--#wrapper END-->
+</body>
+</html>
